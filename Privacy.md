@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Yuxuan "fishy" Wang built the Nene app as an Open Source app.
+Yuxuan "fishy" Wang built the Incognita app as an Open Source app.
 This SERVICE is provided by Yuxuan "fishy" Wang at no cost and is intended for
 use as is.
 

@@ -7,7 +7,7 @@ define_kt_toolchain(
     language_version = "1.8",
 )
 
-PACKAGE = "com.yhsif.nene"
+PACKAGE = "com.yhsif.incognita"
 
 MANIFEST = "AndroidManifest.xml"
 
@@ -35,7 +35,7 @@ declare_deployable_application(
         proguard_generate_mapping = False,
         shrink_resources = release,
         deps = [
-            ":nene",
+            ":incognita",
         ],
     )
     for name, release in (("debug", False), ("release", True))
@@ -44,7 +44,7 @@ declare_deployable_application(
 load("@io_bazel_rules_kotlin//kotlin:android.bzl", "kt_android_library")
 
 kt_android_library(
-    name = "nene",
+    name = "incognita",
     srcs = glob(["src/**/*.kt"]),
     custom_package = PACKAGE,
     manifest = MANIFEST,
@@ -53,8 +53,6 @@ kt_android_library(
         "@maven//:androidx_appcompat_appcompat",
         "@maven//:androidx_browser_browser",
         "@maven//:androidx_core_core_ktx",
-        "@maven//:androidx_fragment_fragment_ktx",
-        "@maven//:androidx_preference_preference",
         "@maven//:com_google_android_material_material",
     ],
 )

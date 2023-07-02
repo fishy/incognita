@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <item name="primary" type="color">#428eff</item>
-  <item name="primary_light" type="color">#82beff</item>
-  <item name="primary_dark" type="color">#0061cb</item>
-  <item name="secondary" type="color">#f5695d</item>
-  <item name="secondary_light" type="color">#ff9c8a</item>
-  <item name="secondary_dark" type="color">#bd3833</item>
-  <item name="adaptive_icon_background" type="color">#1f1f1f</item>
+  <item name="primary" type="color">#9765f4</item>
+  <item name="primary_light" type="color">#d4bff9</item>
+  <item name="primary_dark" type="color">#6114e5</item>
+  <item name="secondary" type="color">#c2f465</item>
+  <item name="secondary_light" type="color">#aaec05</item>
+  <item name="secondary_dark" type="color">#e5fabf</item>
+  <item name="adaptive_icon_background" type="color">#efe5fd</item>
 </resources>

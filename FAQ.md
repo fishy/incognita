@@ -1,17 +1,11 @@
-# Nene FAQ
+# Incognita FAQ
 
-## How do I use Nene to open twitter links?
+## It doesn't open in incognito mode
 
-There are two ways of using Nene to open twitter links:
+Depending on the version of Chrome you are using on your phone,
+you likely need to enable the following 2
+[flags](https://developer.chrome.com/docs/web-platform/chrome-flags/)
+([source](https://stackoverflow.com/a/72540492)):
 
-### Share a twitter link to Nene
-
-Check screen recording [here](screenshots/share.mp4).
-
-### Make Nene the default twitter app
-
-Find Nene in your launcher, long press and choose "App info" in the menu,
-choose "Open by default", then "Add link",
-and check the twitter domains to open in Nene by default.
-
-Check screen recording [here](screenshots/default.mp4).
+* [chrome://flags#cct-incognito](chrome://flags#cct-incognito)
+* [chrome://flags/#cct-incognito-available-to-third-party](chrome://flags/#cct-incognito-available-to-third-party)

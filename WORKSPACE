@@ -1,4 +1,4 @@
-workspace(name = "nene")
+workspace(name = "incognita")
 
 android_sdk_repository(
     name = "androidsdk",
@@ -36,11 +36,9 @@ maven_install(
         "androidx.appcompat:appcompat:1.3.1",
         "androidx.browser:browser:1.5.0",
         "androidx.core:core-ktx:1.8.0",
-        "androidx.fragment:fragment-ktx:1.4.1",
-        "androidx.preference:preference:1.2.0",
         "com.google.android.material:material:1.6.1",
     ],
-    maven_install_json = "@nene//:maven_install.json",
+    maven_install_json = "@incognita//:maven_install.json",
     repositories = [
         "https://maven.google.com",
         "https://repo1.maven.org/maven2",

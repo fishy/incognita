@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <style
-      name="BaseActivity"
-      parent="Theme.MaterialComponents.DayNight"
+      name="DialogMinWidth"
+      parent="Theme.MaterialComponents.DayNight.Dialog.MinWidth"
       >
     <item name="colorPrimary">@color/primary</item>
     <item name="colorPrimaryDark">@color/primary_dark</item>
     <item name="colorAccent">@color/secondary</item>
   </style>
-  <style
-      name="Settings"
-      parent="BaseActivity"
-    />
 
   <style
       name="TextMedium"
