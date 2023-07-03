@@ -4,7 +4,8 @@
 
   <string name="toast_text_template">%1$s: %2$s</string>
   <string name="toast_not_url">
-    \"%1$s\" doesn\'t seem to be a valid URL.
+    This doesn\'t seem to be a valid URL:
+    %1$s
   </string>
 
   <!-- About screen -->

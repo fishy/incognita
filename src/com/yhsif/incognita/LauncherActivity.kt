@@ -11,6 +11,10 @@ import androidx.browser.customtabs.CustomTabsIntent
 
 class LauncherActivity : Activity() {
 
+  companion object {
+    val ALLOWED_SCHEMES = setOf("http", "https")
+  }
+
   override fun onResume() {
     var origText: String = ""
     var url: Uri? = null
@@ -24,7 +28,7 @@ class LauncherActivity : Activity() {
         else -> {}
       }
     }
-    if (url == null) {
+    if (url == null || !ALLOWED_SCHEMES.contains(url?.getScheme())) {
       if (origText != "") {
         val text = getString(R.string.toast_not_url, origText)
         val msg = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
