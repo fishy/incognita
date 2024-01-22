@@ -1,6 +1,6 @@
 {
   "lockFileVersion": 3,
-  "moduleFileHash": "bedc2d11654672d07991abf982f0fc426b9f87c7fbc480da1aa8349295586ca1",
+  "moduleFileHash": "0585c9977d1253a159d4a0148a05cc3ad09c6e1f3842eb3709e5b47dc2d00101",
   "flags": {
     "cmdRegistries": [
       "https://bcr.bazel.build/"
@@ -46,6 +46,7 @@
                   "androidx.activity:activity:1.4.0",
                   "androidx.appcompat:appcompat:1.3.1",
                   "androidx.browser:browser:1.5.0",
+                  "androidx.core:core:1.8.0",
                   "androidx.core:core-ktx:1.8.0",
                   "com.google.android.material:material:1.6.1"
                 ],
@@ -2073,7 +2074,7 @@
       "general": {
         "bzlTransitiveDigest": "vOkppYc6wE/3x4HnEmuAd/USfcKbaNTBbUEl7bKmhsY=",
         "accumulatedFileDigests": {
-          "@@//:maven_install.json": "2500c03838b95fb28b44a4d9d5a46daf4986fbb5d76658ea87794fda73dadad2",
+          "@@//:maven_install.json": "5f061993e272b8fcbf260bcf9a92eac3bc1e901dfdfd5b3bff9e15ac24685ea8",
           "@@rules_jvm_external~6.0//:rules_jvm_external_deps_install.json": "cafb5d2d8119391eb2b322ce3840d3352ea82d496bdb8cbd4b6779ec4d044dda"
         },
         "envVariables": {},
@@ -2764,6 +2765,7 @@
                 "{ \"group\": \"androidx.activity\", \"artifact\": \"activity\", \"version\": \"1.4.0\" }",
                 "{ \"group\": \"androidx.appcompat\", \"artifact\": \"appcompat\", \"version\": \"1.3.1\" }",
                 "{ \"group\": \"androidx.browser\", \"artifact\": \"browser\", \"version\": \"1.5.0\" }",
+                "{ \"group\": \"androidx.core\", \"artifact\": \"core\", \"version\": \"1.8.0\" }",
                 "{ \"group\": \"androidx.core\", \"artifact\": \"core-ktx\", \"version\": \"1.8.0\" }",
                 "{ \"group\": \"com.google.android.material\", \"artifact\": \"material\", \"version\": \"1.6.1\" }",
                 "{ \"group\": \"com.google.code.findbugs\", \"artifact\": \"jsr305\", \"version\": \"3.0.2\" }",
@@ -3689,6 +3691,7 @@
                 "{ \"group\": \"androidx.activity\", \"artifact\": \"activity\", \"version\": \"1.4.0\" }",
                 "{ \"group\": \"androidx.appcompat\", \"artifact\": \"appcompat\", \"version\": \"1.3.1\" }",
                 "{ \"group\": \"androidx.browser\", \"artifact\": \"browser\", \"version\": \"1.5.0\" }",
+                "{ \"group\": \"androidx.core\", \"artifact\": \"core\", \"version\": \"1.8.0\" }",
                 "{ \"group\": \"androidx.core\", \"artifact\": \"core-ktx\", \"version\": \"1.8.0\" }",
                 "{ \"group\": \"com.google.android.material\", \"artifact\": \"material\", \"version\": \"1.6.1\" }",
                 "{ \"group\": \"com.google.code.findbugs\", \"artifact\": \"jsr305\", \"version\": \"3.0.2\" }",

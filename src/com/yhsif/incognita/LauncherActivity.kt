@@ -8,11 +8,16 @@ import android.os.Build
 import android.widget.Toast
 import androidx.browser.customtabs.CustomTabColorSchemeParams
 import androidx.browser.customtabs.CustomTabsIntent
+import androidx.core.content.pm.ShortcutInfoCompat
+import androidx.core.content.pm.ShortcutManagerCompat
+import androidx.core.graphics.drawable.IconCompat
 
 class LauncherActivity : Activity() {
 
   companion object {
     val ALLOWED_SCHEMES = setOf("http", "https")
+
+    val FAQ_URL = Uri.parse("https://github.com/fishy/incognita/blob/main/FAQ.md")
   }
 
   override fun onResume() {
@@ -42,8 +47,21 @@ class LauncherActivity : Activity() {
         }
         Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
       }
-      url = Uri.parse("https://github.com/fishy/incognita/blob/main/FAQ.md")
+      url = FAQ_URL
     }
+
+    ShortcutManagerCompat.setDynamicShortcuts(
+      this,
+      listOf(
+        ShortcutInfoCompat.Builder(this, "com.yhsif.incognita.incognita")
+          .setShortLabel(getText(R.string.app_name))
+          .setLongLabel(getText(R.string.app_name))
+          .setIcon(IconCompat.createWithResource(this, R.mipmap.icon))
+          .setCategories(setOf("com.yhsif.incognita.category.TEXT_SHARE_TARGET"))
+          .setIntent(Intent(Intent.ACTION_SEND).setClass(this, LauncherActivity::class.java))
+          .build(),
+      ),
+    )
 
     CustomTabsIntent.Builder().setDefaultColorSchemeParams(
       CustomTabColorSchemeParams.Builder().setToolbarColor(
